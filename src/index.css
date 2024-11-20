@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: 'ChristmasBell';
+  src: url('ChristmasBell.otf');
+}
+
+/* .christmas-bell {
+  font-family: ChristmasBell;
+} */
+

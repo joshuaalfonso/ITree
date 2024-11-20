@@ -47,10 +47,17 @@ function App() {
 
   return (
     <>
-     <section className="bg-green-500">
+     <section className="bg-[#384B70]">
       {init && <Particles options={options} particlesLoaded={particlesLoaded}/>}
-      <div className='bg-green-500 min-h-svh max-w-xl mx-auto flex items-center justify-center px-5'>
+      <div className='bg-white-500 min-h-svh max-w-xl mx-auto flex flex-col gap-10 items-center justify-center px-5'>
         <img src="tree.svg" className="w-full h-[300px]"></img>
+        <div>
+          <h1 className="text-7xl text-[#FCFAEE] font-bell">
+            Merry Chr<span className="text-green-600">i</span>s<span className="text-green-600">t</span>mas!
+          </h1>
+          <p className="text-[#FCFAEE]">A Tree for Every Tradition: Celebrate Christmas in Style!</p>
+        </div>
+        
       </div>
      </section>
     </>
