@@ -7,6 +7,11 @@
   src: url('ChristmasBell.otf');
 }
 
+@font-face {
+  font-family: 'Clouts';
+  src: url('Clouts!.ttf');
+}
+
 /* .christmas-bell {
   font-family: ChristmasBell;
 } */

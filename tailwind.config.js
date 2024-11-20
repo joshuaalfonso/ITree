@@ -9,7 +9,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        bell: ['ChristmasBell']
+        bell: ['ChristmasBell'],
+        clouts: ['Clouts']
       }
     },
   },
