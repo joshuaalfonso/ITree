@@ -27,14 +27,14 @@ const AboutTree = () => {
                 ref={ref}
             >
                 { isVisible && (
-                     <RoughNotation type="highlight" color="#507687" show={true} animationDelay={2500} animationDuration={1200} strokeWidth={1}>
+                     <RoughNotation type="highlight" color="#507687" show={true} animationDelay={2000} animationDuration={1200} strokeWidth={1}>
                      <motion.h1 
                         className="text-[#FCFAEE] text-3xl font-bell tracking-widest"
                         variants={variants}
                         initial='hidden'
                         whileInView='visible'
                         viewport={{ amount: 'all', once: true }}
-                        transition={{type: 'tween', delay: 1, duration: 0.5,  ease: [0.25, 0.8, 0.25, 1]}}
+                        transition={{type: 'tween', delay: .5, duration: 0.5,  ease: [0.25, 0.8, 0.25, 1]}}
                         // variants={variants}  
                      >
                          About Our Work
@@ -49,7 +49,8 @@ const AboutTree = () => {
                 variants={variants}
                 initial='hidden'
                 whileInView='visible'
-                transition={{duration: 0.8, delay: 1.4, ease: [0, 0.71, 0.2, 1.01]}}  
+                viewport={{once: true}}
+                transition={{duration: 0.8, delay: 1, ease: [0, 0.71, 0.2, 1.01]}}  
             >
                 <div className="relative">
                     <img src="our-tree.webp" className="rounded -rotate-3" width={300}/>
