@@ -2,14 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: 'ChristmasBell';
-  src: url('ChristmasBell.otf');
+html {
+  scroll-behavior: smooth;
 }
 
 @font-face {
-  font-family: 'Clouts';
-  src: url('Clouts!.ttf');
+  font-family: "ChristmasBell";
+  src: url("ChristmasBell.otf");
+}
+
+@font-face {
+  font-family: "Clouts";
+  src: url("Clouts!.ttf");
 }
 
 * {
@@ -20,4 +24,3 @@
 /* .christmas-bell {
   font-family: ChristmasBell;
 } */
-
