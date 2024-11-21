@@ -12,6 +12,11 @@
   src: url('Clouts!.ttf');
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 /* .christmas-bell {
   font-family: ChristmasBell;
 } */
