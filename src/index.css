@@ -8,12 +8,14 @@ html {
 
 @font-face {
   font-family: "ChristmasBell";
-  src: url("ChristmasBell.otf");
+  src: url("/itree/ChristmasBell.otf");
+  /* src: url('/itree/assets/ChristmasBell.otf'); */
 }
 
 @font-face {
   font-family: "Clouts";
-  src: url("Clouts!.ttf");
+  src: url("/itree/Clouts!.ttf");
+  /* src: url('/itree/assets/Clouts!.ttf'); */
 }
 
 * {
@@ -21,6 +23,57 @@ html {
   padding: 0;
 }
 
-/* .christmas-bell {
-  font-family: ChristmasBell;
+/* .embla {
+  overflow: hidden;
 } */
+/* .embla__container {
+  display: flex;
+} */
+/* .embla__slide {
+  flex: 0 0 100%;
+  min-width: 0;
+}
+
+.embla__slide img {
+  width: 100%;
+} */
+
+.embla {
+  max-width: 48rem;
+  margin: auto;
+  --slide-height: 19rem;
+  --slide-spacing: 1rem;
+  --slide-size: 70%;
+}
+.embla__viewport {
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+  touch-action: pan-y pinch-zoom;
+  margin-left: calc(var(--slide-spacing) * -1);
+}
+.embla__slide {
+  transform: translate3d(0, 0, 0);
+  flex: 0 0 var(--slide-size);
+  min-width: 0;
+  padding-left: var(--slide-spacing);
+}
+.embla__slide__img {
+  border-radius: 1.8rem;
+  display: block;
+  height: var(--slide-height);
+  width: 100%;
+  object-fit: cover;
+  opacity: 1 !important; 
+}
+.embla__slide {
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out;
+}
+/* .embla__slide:not(.is-snapped) {
+  opacity: 0.16;
+} */
+
+
+

@@ -4,6 +4,8 @@ import { useEffect, useState } from "react";
 import TreeParts from "./tree-parts";
 import Hero from "./hero";
 import AboutTree from "./about-tree";
+import { EmblaCarousel } from "./EmblaCarousel";
+import { RoughNotation } from "react-rough-notation";
 
 
 function App() {
@@ -39,7 +41,7 @@ function App() {
     initParticlesEngine(async (engine) => {
         await loadSlim(engine);
     }).then(() => {
-        setInit(true);
+        setInit(false);
     });
     console.log('rendered')
     window.scrollTo(0, 0);
@@ -61,13 +63,24 @@ function App() {
         <Hero />
       </section>
 
-
       <section className="px-5 py-12">
         <AboutTree />
       </section>
 
       <section className="px-5 py-12">
         <TreeParts />
+      </section>
+
+      <section className=" py-4">
+
+        <h1 
+          className="text-[#FCFAEE] text-3xl font-bell tracking-widest text-center mb-12"
+        >
+            Team Pictures
+        </h1>
+
+
+        <EmblaCarousel />
       </section>
 
       </div>

@@ -1,4 +1,6 @@
 import { RoughNotation } from "react-rough-notation";
+import Button from "./button";
+import Card from "./card";
 
 
 
@@ -13,18 +15,39 @@ const TreeParts = () => {
         </div>
 
         <div className="mt-[80px] grid grid-cols-2 gap-4">
-            <div className="flex flex-col items-center justify-center">
-                <img src="parol-nobg.png" width={200} height={200} className="object-cover"/>
-                <span className="text-[#FCFAEE] font-clouts tracking-widest text-2xl">Parol</span>
-            </div>
-            <div className="flex flex-col items-center justify-center">
-                <img src="lantern-nobg.png" width={200} height={200} className="object-cover"/>
-                <span className="text-[#FCFAEE] font-clouts tracking-widest text-2xl">Lantern</span>
-            </div>
-            <div className="flex flex-col items-center justify-center">
-                <img src="wired-tree.png" width={200} height={200} className="object-cover"/>
-                <span className="text-[#FCFAEE] font-clouts tracking-widest text-2xl">Wired Tree</span>
-            </div>
+
+
+            <Card 
+                image={'flower-nobg.png'} 
+                label={'Flower'}
+            />
+
+            <Card 
+                image={'lantern-nobg.png'} 
+                label={'Lantern'}
+            />
+           
+            <Card 
+                image={'parol-2-nobg.png'}
+                label={'Red Parol'}
+            />
+
+            <Card 
+                image={'parol-nobg.png'} 
+                label={'Yellow Parol'}
+            />
+
+            <Card 
+                image={'mini-tree-nobg.png'} 
+                label={'Mini Tree'}
+            />
+          
+            <Card 
+                image={'wired-tree.png'}
+                label={'Wired Tree'}
+            />
+
+
         </div>
         </>
     )
