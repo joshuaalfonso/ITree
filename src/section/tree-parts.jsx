@@ -1,6 +1,7 @@
 import { RoughNotation } from "react-rough-notation";
 import Card from "../components/card";
 import useTreeParts from "../utils/useGetTreeParts";
+import { PhotoProvider } from "react-photo-view";
 
 
 
@@ -19,6 +20,7 @@ const TreeParts = () => {
         </div>
 
         <div className="mt-[80px] grid grid-cols-2 gap-4">
+        <PhotoProvider>
 
 
             {parts.map((part, index) => (
@@ -29,20 +31,7 @@ const TreeParts = () => {
                 />
             ))}
 
-            {/* <Card 
-                image={'parol-nobg.png'} 
-                label={'Yellow Parol'}
-            />
-
-            <Card 
-                image={'mini-tree-nobg.png'} 
-                label={'Mini Tree'}
-            />
-          
-            <Card 
-                image={'wired-tree.png'}
-                label={'Wired Tree'}
-            /> */}
+        </PhotoProvider>
 
 
         </div>

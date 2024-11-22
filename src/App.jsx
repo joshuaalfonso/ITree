@@ -6,6 +6,7 @@ import { EmblaCarousel } from "./components/EmblaCarousel";
 import useParticles from "./utils/useParticles";
 import { particlesOptions } from "./utils/useParticlesOptions";
 import Particles from "@tsparticles/react";
+import 'react-photo-view/dist/react-photo-view.css';
 
 
 function App() {
@@ -41,7 +42,7 @@ function App() {
           </h1>
 
           <EmblaCarousel />
-          
+
         </section>
 
       </div>
