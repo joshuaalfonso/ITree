@@ -1,6 +1,6 @@
 import { PhotoView } from "react-photo-view";
 import Button from "./button";
-
+import { motion } from "motion/react";
 
 
 
@@ -11,7 +11,8 @@ const Card = ({image, label}) => {
     return (
         <div className="flex flex-col items-center justify-center gap-3">
             <PhotoView src={image}>
-                <img 
+                <motion.img 
+                    whileHover={{y: -3}}
                     src={image} 
                     width={200} 
                     height={200} 

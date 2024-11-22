@@ -3,6 +3,7 @@
 import useEmblaCarousel from 'embla-carousel-react'
 import useImages from '../utils/useGetTeamPictures';
 import { PhotoProvider, PhotoView } from 'react-photo-view';
+import { motion } from 'motion/react';
 
 
 export function EmblaCarousel() {
@@ -21,7 +22,7 @@ export function EmblaCarousel() {
             <div className="embla__slide" key={index}>
               <PhotoView key={index} src={image.src}>
 
-                <img
+                <motion.img
                   className="embla__slide__img cursor-pointer"
                   src={image.src}
                   alt="Your alt text"
