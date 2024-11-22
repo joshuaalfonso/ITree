@@ -1,11 +1,15 @@
 import { RoughNotation } from "react-rough-notation";
 import Card from "../components/card";
+import useTreeParts from "../utils/useGetTreeParts";
 
 
 
 
 
 const TreeParts = () => {
+
+    const parts = useTreeParts();
+
     return (
         <>
         <div className="flex items-center justify-center">
@@ -17,22 +21,15 @@ const TreeParts = () => {
         <div className="mt-[80px] grid grid-cols-2 gap-4">
 
 
-            <Card 
-                image={'flower-nobg.png'} 
-                label={'Flower'}
-            />
+            {parts.map((part, index) => (
+                <Card 
+                    image={part.src} 
+                    label={part.label} 
+                    key={index}
+                />
+            ))}
 
-            <Card 
-                image={'lantern-nobg.png'} 
-                label={'Lantern'}
-            />
-           
-            <Card 
-                image={'parol-2-nobg.png'}
-                label={'Red Parol'}
-            />
-
-            <Card 
+            {/* <Card 
                 image={'parol-nobg.png'} 
                 label={'Yellow Parol'}
             />
@@ -45,7 +42,7 @@ const TreeParts = () => {
             <Card 
                 image={'wired-tree.png'}
                 label={'Wired Tree'}
-            />
+            /> */}
 
 
         </div>

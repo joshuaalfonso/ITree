@@ -1,7 +1,7 @@
 
 
 import useEmblaCarousel from 'embla-carousel-react'
-import useImages from '../utils/images';
+import useImages from '../utils/useGetTeamPictures';
 
 
 export function EmblaCarousel() {

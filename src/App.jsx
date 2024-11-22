@@ -1,88 +1,51 @@
-import Particles, { initParticlesEngine } from "@tsparticles/react";
-import { loadSlim } from "@tsparticles/slim";
-import { useEffect, useState } from "react";
+
 import TreeParts from "./section/tree-parts";
 import Hero from "./section/hero";
 import AboutTree from "./section/about-tree";
 import { EmblaCarousel } from "./components/EmblaCarousel";
+import useParticles from "./utils/useParticles";
+import { particlesOptions } from "./utils/useParticlesOptions";
+import Particles from "@tsparticles/react";
 
 
 function App() {
-  const options = {
-    particles: {
-      color: {
-        value: "#fff"
-      },
-      number: {
-        value: 50
-      },
-      opacity: {
-        value: {min: 0.3, max: 1}
-      },
-      shape: {
-        type: "circle"
-      },
-      size: {
-        value: {min:1, max:5}
-      },
-      move: {
-        direction: "bottom-right",
-        enable: true,
-        speed: {min: 3, max: 5},
-        straight: true
-      }
-    }
-  }
 
-  const [ init, setInit ] = useState(false);
-
-  useEffect(() => {
-    initParticlesEngine(async (engine) => {
-        await loadSlim(engine);
-    }).then(() => {
-        setInit(true);
-    });
-    console.log('rendered')
-    window.scrollTo(0, 0);
-  }, []);
-
-  const particlesLoaded = (container) => {
-    console.log(container);
-  };
+  const init = useParticles();
+  const options = particlesOptions;
 
   return (
     <div className="bg-[#384B70]">
 
-
-      {init && <Particles options={options} particlesLoaded={particlesLoaded} />}
+      {init && <Particles options={options} />}
 
       <div className=' max-w-xl mx-auto px-5 min-h-svh overflow-hidden'>
 
-      <section className="h-svh flex flex-col gap-12 items-center justify-center">
-        <Hero />
-      </section>
+        <section className="h-svh flex flex-col gap-12 items-center justify-center">
+          <Hero />
+        </section>
 
-      <section className="px-5 py-12">
-        <AboutTree />
-      </section>
+        <section className="px-5 py-12">
+          <AboutTree />
+        </section>
 
-      <section className="px-5 py-12">
-        <TreeParts />
-      </section>
+        <section className="px-5 py-12">
+          <TreeParts />
+        </section>
 
-      <section className=" py-10">
+        <section className=" py-10">
 
-        <h1 
-          className="text-[#FCFAEE] text-3xl font-bell tracking-widest text-center mb-12"
-        >
-            Team Pictures
-        </h1>
+          <h1 
+            className="text-[#FCFAEE] text-3xl font-bell tracking-widest text-center mb-12"
+          >
+              Team Pictures
+          </h1>
 
-
-        <EmblaCarousel />
-      </section>
+          <EmblaCarousel />
+          
+        </section>
 
       </div>
+
     </div>
   )
 }
