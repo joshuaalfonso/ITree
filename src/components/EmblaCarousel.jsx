@@ -1,7 +1,8 @@
 
-import React from 'react'
+
 import useEmblaCarousel from 'embla-carousel-react'
-import useImages from './images';
+import useImages from '../utils/images';
+
 
 export function EmblaCarousel() {
   const [emblaRef] = useEmblaCarousel();

@@ -1,6 +1,6 @@
 import { RoughNotation } from "react-rough-notation";
-import Button from "./button";
-import Card from "./card";
+import Card from "../components/card";
+
 
 
 

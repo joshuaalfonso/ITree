@@ -43,7 +43,7 @@ html {
   margin: auto;
   --slide-height: 19rem;
   --slide-spacing: 1rem;
-  --slide-size: 70%;
+  --slide-size: 85%;
 }
 .embla__viewport {
   overflow: hidden;
@@ -65,7 +65,7 @@ html {
   height: var(--slide-height);
   width: 100%;
   object-fit: cover;
-  opacity: 1 !important; 
+  opacity: 1 !important;
 }
 .embla__slide {
   opacity: 1;
@@ -74,6 +74,3 @@ html {
 /* .embla__slide:not(.is-snapped) {
   opacity: 0.16;
 } */
-
-
-

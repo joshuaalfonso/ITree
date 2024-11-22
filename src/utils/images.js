@@ -1,9 +1,9 @@
 import { useState } from "react"
-import image1 from './assets/working-img/IMG_6545.jpeg';
-import image2 from './assets/working-img/IMG_6548.jpeg';
-import image3 from './assets/working-img/IMG_6549.jpeg';
-import image4 from './assets/working-img/IMG_6551.jpeg';
-import image5 from './assets/working-img/IMG_6554.jpeg';
+import image1 from '../assets/working-img/IMG_6545.jpeg';
+import image2 from '../assets/working-img/IMG_6548.jpeg';
+import image3 from '../assets/working-img/IMG_6549.jpeg';
+import image4 from '../assets/working-img/IMG_6551.jpeg';
+import image5 from '../assets/working-img/IMG_6554.jpeg';
 
 
 

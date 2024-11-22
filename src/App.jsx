@@ -1,11 +1,10 @@
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
 import { useEffect, useState } from "react";
-import TreeParts from "./tree-parts";
-import Hero from "./hero";
-import AboutTree from "./about-tree";
-import { EmblaCarousel } from "./EmblaCarousel";
-import { RoughNotation } from "react-rough-notation";
+import TreeParts from "./section/tree-parts";
+import Hero from "./section/hero";
+import AboutTree from "./section/about-tree";
+import { EmblaCarousel } from "./components/EmblaCarousel";
 
 
 function App() {
@@ -41,7 +40,7 @@ function App() {
     initParticlesEngine(async (engine) => {
         await loadSlim(engine);
     }).then(() => {
-        setInit(false);
+        setInit(true);
     });
     console.log('rendered')
     window.scrollTo(0, 0);
@@ -55,7 +54,7 @@ function App() {
     <div className="bg-[#384B70]">
 
 
-      {init && <Particles options={options} particlesLoaded={particlesLoaded}/>}
+      {init && <Particles options={options} particlesLoaded={particlesLoaded} />}
 
       <div className=' max-w-xl mx-auto px-5 min-h-svh overflow-hidden'>
 
@@ -71,7 +70,7 @@ function App() {
         <TreeParts />
       </section>
 
-      <section className=" py-4">
+      <section className=" py-10">
 
         <h1 
           className="text-[#FCFAEE] text-3xl font-bell tracking-widest text-center mb-12"
