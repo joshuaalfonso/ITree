@@ -10,7 +10,9 @@ export default {
     extend: {
       fontFamily: {
         bell: ['ChristmasBell'],
-        clouts: ['Clouts']
+        clouts: ['Clouts'],
+        christmasBox: ['Christmas-box'],
+        playful: ['Playful'],
       }
     },
   },

@@ -8,31 +8,31 @@ const Hero = () => {
 
     return ( 
         <>
-
+            {/* e32636 */}
             <motion.img 
                 initial={{opacity: 0, scale: 0.5}} 
                 animate={{opacity: 1, scale: 1}} 
                 transition={{duration: 0.8, delay: 0.5, ease: [0, 0.71, 0.2, 1.01]}} 
-                src="tree.svg" 
+                src="hero-tree.svg" 
                 className="w-full h-[300px]"
-            ></motion.img>
+            ></motion.img> 
 
-            {/* <img src="tree.svg" className="w-full h-[300px]"></img> */}
             <div>
                 <motion.h1
                     initial={{opacity: 0, scale: 0.5}} animate={{opacity: 1, scale: 1}} transition={{duration: 0.8, delay: 0.8, ease: [0, 0.71, 0.2, 1.01]}} 
-                    className="text-6xl text-[#FCFAEE] font-bell text-center" 
+                    className="text-6xl text-[#FCFAEE] font-playful text-center tracking-wide" 
                 >
-                    Merry Chr<span className="text-green-600">i</span>s<span className="text-green-600">t</span>mas!
+                      {`(`}erry hr<span className="text-[#507687]">i</span>s<span className="text-[#507687]">t</span>mas{`)`}
                 </motion.h1>
 
                 <motion.p
                     initial={{opacity: 0, scale: 0.5}} animate={{opacity: 1, scale: 1}} transition={{duration: 0.8, delay: 1.1, ease: [0, 0.71, 0.2, 1.01]}}  
                     className="text-[#FCFAEE] text-2xl text-center font-clouts tracking-widest"
                 >
-                    A 🎄 for Every Tradition, <br></br> 
-                    Celebrate  <RoughNotation type="underline" color="#16a14a" show={true} animationDelay={2200} animationDuration={1300} strokeWidth={1}>Christmas</RoughNotation> in Style!
+                     A <span className="font-christmasBox text-2xl">“</span> for Every Tradition, <br></br> 
+                    Celebrate  <RoughNotation type="underline" color="#507687" show={true} animationDelay={2200} animationDuration={1300} strokeWidth={1}>Christmas</RoughNotation> in Style.
                 </motion.p>
+                {/* 🎄 */}
 
             </div>
             

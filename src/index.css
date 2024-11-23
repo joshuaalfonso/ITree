@@ -18,6 +18,16 @@ html {
   /* src: url('/itree/assets/Clouts!.ttf'); */
 }
 
+@font-face {
+  font-family: "Christmas-box";
+  src: url("christmas-box.otf");
+}
+
+@font-face {
+  font-family: "Playful";
+  src: url("playful.otf");
+}
+
 * {
   margin: 0;
   padding: 0;

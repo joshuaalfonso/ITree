@@ -45,7 +45,7 @@ const AboutTree = () => {
             </motion.div>
 
             <motion.div 
-                className="mt-[80px] mb-12 flex items-center justify-center overflow-visible"
+                className="mt-[100px] mb-12 flex items-center justify-center overflow-visible"
                 variants={variants}
                 initial='hidden'
                 whileInView='visible'
@@ -53,17 +53,28 @@ const AboutTree = () => {
                 transition={{duration: 0.8, delay: 1, ease: [0, 0.71, 0.2, 1.01]}}  
             >
                 <div className="relative">
-                    <img src="our-tree.webp" className="rounded -rotate-3" width={300}/>
+                    <img src="red-minitree.png" className="rounded -rotate-3" width={300}/>
                     <img src="tape.png" className="rounded -rotate-[130deg] absolute -top-7 -left-9" width={100}/>
                     <img src="tape.png" className="rounded -rotate-[130deg] absolute -bottom-7 -right-9" width={100}/>
                 </div>
             </motion.div>
 
             <div className="px-[40px] flex flex-col ">
-                <h1 className="text-[#FCFAEE] text-3xl font-clouts">
-                    <span className="text-green-600">iT</span>ree
+
+                <h1 className="text-[#FCFAEE] text-4xl  font-playful tracking-widest text-center">
+                    <span className="font-christmasBox">{`3`}</span> <span className="text-[#507687]">IT</span>ree <span className="font-christmasBox">{`3`}</span> 
                 </h1>
-                <p className="text-[#FCFAEE] font-clouts tracking-widest text-xl mt-4">Our Sustainable iTree is an innovative project that utilizes recycled materials, such as LAN cables, old circuit boards, wires, and other electronic waste, to create a functional, eco-friendly symbol of our commitment to sustainability in the tech industry.</p>
+
+                <p 
+                    className="text-[#FCFAEE] font-clouts tracking-widest text-2xl mt-4 text-center"
+                >
+                    Our Sustainable iTree is an innovative project that utilizes recycled materials, such as LAN cables, old circuit boards, wires, and other electronic waste. 
+                </p>
+                <p className="text-[#FCFAEE] font-clouts tracking-widest text-2xl mt-4 text-center">
+                to create a functional, eco-friendly symbol of our commitment to sustainability in the tech industry.
+                </p>
+
+
             </div>
         </div>
     )

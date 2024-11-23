@@ -25,7 +25,7 @@ const Home = () => {
                 <Hero />
             </section>
 
-            <section className="px-5 py-12">
+            <section className="min-h-svh px-5 py-12">
                 <AboutTree />
             </section>
 
