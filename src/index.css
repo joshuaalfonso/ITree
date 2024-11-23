@@ -8,24 +8,22 @@ html {
 
 @font-face {
   font-family: "ChristmasBell";
-  src: url("ChristmasBell.otf");
-  /* src: url('/itree/assets/ChristmasBell.otf'); */
+  src: url("./assets/fonts/ChristmasBell.otf");
 }
 
 @font-face {
   font-family: "Clouts";
-  src: url("Clouts!.ttf");
-  /* src: url('/itree/assets/Clouts!.ttf'); */
+  src: url("./assets/fonts/Clouts!.ttf");
 }
 
 @font-face {
   font-family: "Christmas-box";
-  src: url("christmas-box.otf");
+  src: url("./assets/fonts/christmas-box.otf");
 }
 
 @font-face {
   font-family: "Playful";
-  src: url("playful.otf");
+  src: url("./assets/fonts/playful.otf");
 }
 
 * {
