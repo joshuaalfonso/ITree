@@ -10,7 +10,7 @@ const useParticles = () => {
     initParticlesEngine(async (engine) => {
         await loadSlim(engine);
     }).then(() => {
-        setInit(true);
+        setInit(false);
     });
     // window.scrollTo(0, 0);
   }, []);

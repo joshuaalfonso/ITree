@@ -22,7 +22,7 @@ const Card = ({image, label}) => {
             <div>
                 <p className="text-[#FCFAEE] text-center font-clouts tracking-widest text-2xl">{label}</p>
                 <small></small>
-                <Button />
+                <Button>View Details</Button>
             </div>
         </div>
     )

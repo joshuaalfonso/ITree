@@ -8,13 +8,13 @@ html {
 
 @font-face {
   font-family: "ChristmasBell";
-  src: url("/itree/ChristmasBell.otf");
+  src: url("ChristmasBell.otf");
   /* src: url('/itree/assets/ChristmasBell.otf'); */
 }
 
 @font-face {
   font-family: "Clouts";
-  src: url("/itree/Clouts!.ttf");
+  src: url("Clouts!.ttf");
   /* src: url('/itree/assets/Clouts!.ttf'); */
 }
 
