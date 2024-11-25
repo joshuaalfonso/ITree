@@ -61,18 +61,57 @@ const AboutTree = () => {
 
             <div className="px-[40px] flex flex-col ">
 
-                <h1 className="text-[#FCFAEE] text-4xl  font-playful tracking-widest text-center">
-                    <span className="font-christmasBox">{`3`}</span> <span className="text-[#507687]">IT</span>ree <span className="font-christmasBox">{`3`}</span> 
-                </h1>
-
-                <p 
-                    className="text-[#FCFAEE] font-clouts tracking-widest text-2xl mt-4 text-center"
+                <motion.h1 
+                    className="text-[#FCFAEE] text-4xl font-playful tracking-widest text-center"
+                    variants={variants}
+                    initial='hidden'
+                    whileInView='visible'
+                    viewport={{once: true}}
+                    transition={{duration: 0.8, delay: 1.5, ease: [0, 0.71, 0.2, 1.01]}}  
                 >
-                    Our Sustainable iTree is an innovative project that utilizes recycled materials, such as LAN cables, old circuit boards, wires, and other electronic waste. 
-                </p>
-                <p className="text-[#FCFAEE] font-clouts tracking-widest text-2xl mt-4 text-center">
+                    <span className="font-christmasBox">
+                        {`3`}</span> <span className="text-[#507687]">IT</span>ree <span className="font-christmasBox">{`3`}
+                    </span> 
+                </motion.h1>
+
+
+                <motion.p 
+                    className="text-[#FCFAEE] font-clouts tracking-widest text-2xl mt-4 text-center"
+                    variants={variants}
+                    initial='hidden'
+                    whileInView='visible'
+                    viewport={{once: true}}
+                    transition={{duration: 0.8, delay: 2, ease: [0, 0.71, 0.2, 1.01]}}  
+                >
+                    Our Sustainable iTree is an innovative project that utilizes recycled materials, such as LAN cables, old circuit boards, wires, and other electronic waste. <br></br> <br></br>
+                    to create a functional, eco-friendly symbol of our commitment to sustainability in the tech industry.
+                </motion.p>
+
+
+                {/* <p className="text-[#FCFAEE] font-clouts tracking-widest text-2xl mt-4 text-center">
                 to create a functional, eco-friendly symbol of our commitment to sustainability in the tech industry.
-                </p>
+                </p> */}
+
+
+                {/* const text = "Framer Motion is a really cool tool".split(" ");
+
+  return (
+    <div className="App">
+      {text.map((el, i) => (
+        <motion.span
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{
+            duration: 0.25,
+            delay: i / 10,
+          }}
+          key={i}
+        >
+          {el}{" "}
+        </motion.span>
+      ))}
+    </div>
+  ); */}
 
 
             </div>
