@@ -42,6 +42,7 @@ const Hero = () => {
                 initial={{y:'100vh'}}
                 transition={{type: 'tween', delay: 1.3, duration: 0.5,  ease: [0.25, 0.8, 0.25, 1]}}
             >   
+            <a href="#AboutTree">
                 <motion.img 
                     src="arrow.png" 
                     width={30}
@@ -57,6 +58,7 @@ const Hero = () => {
                     }}
                 ></motion.img>
                 {/* <span className="text-[#FCFAEE] font-clouts tracking-widest">Scroll</span> */}
+            </a>
             </motion.button>
         </>
     )

@@ -6,6 +6,7 @@ import useParticles from "./utils/useParticles";
 import { particlesOptions } from "./utils/useParticlesOptions";
 import Particles from "@tsparticles/react";
 import 'react-photo-view/dist/react-photo-view.css';
+import TeamPictures from "./section/team-pictures";
 
 
 
@@ -25,7 +26,7 @@ const Home = () => {
                 <Hero />
             </section>
 
-            <section className="min-h-svh px-5 py-12">
+            <section id="AboutTree" className="min-h-svh px-5 py-12">
                 <AboutTree />
             </section>
 
@@ -35,13 +36,7 @@ const Home = () => {
 
             <section className=" py-10">
 
-            <h1 
-                className="text-[#FCFAEE] text-3xl font-bell tracking-widest text-center mb-12"
-            >
-                Team Pictures
-            </h1>
-
-            <EmblaCarousel />
+                <TeamPictures />
 
             </section>
 
