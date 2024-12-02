@@ -10,6 +10,9 @@ import image8 from '../assets/working-img/IMG_6579.jpeg';
 import image9 from '../assets/working-img/IMG_6554.jpeg';
 import image10 from '../assets/working-img/IMG_6582.png';
 import image11 from '../assets/working-img/IMG_6583.png';
+import image12 from '../assets/working-img/IMG_6609.jpeg';
+import image13 from '../assets/working-img/IMG_6614.jpeg';
+import image14 from '../assets/working-img/IMG_6617.jpeg';
 
 
 
@@ -26,6 +29,9 @@ const useImages = () => {
         { src: image9, alt: 'Image 9' },
         { src: image10, alt: 'Image 10' },
         { src: image11, alt: 'Image 11' },
+        { src: image12, alt: 'Image 12' },
+        { src: image13, alt: 'Image 13' },
+        { src: image14, alt: 'Image 14' },
 
         // { src: image6, alt: 'Image 6' },/
     ])
