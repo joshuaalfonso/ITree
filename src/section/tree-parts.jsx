@@ -19,7 +19,7 @@ const TreeParts = () => {
             </RoughNotation>
         </div>
 
-        <div className="mt-[80px] grid grid-cols-2 gap-4">
+        <div className="mt-[80px] grid grid-cols-2 gap-x-4 gap-y-5">
         <PhotoProvider>
 
 
