@@ -8,6 +8,8 @@ import wiredTree from '../assets/tree-parts/wired-tree.png';
 import paperHouse from '../assets/tree-parts/paper-house.png';
 import styroLetter from '../assets/tree-parts/styro-letter.png';
 import santa from '../assets/tree-parts/santa.png';
+import paleta from '../assets/tree-parts/paleta-wood.png';
+import christmasLight from '../assets/tree-parts/christmas-light.png';
 
 const useTreeParts = () => {
     const [parts] = useState([
@@ -46,6 +48,14 @@ const useTreeParts = () => {
         {
             src: paperHouse,
             label: 'Paper house'
+        },
+        {
+            src: paleta,
+            label: 'Palett wood'
+        },
+        {
+            src: christmasLight,
+            label: 'Christmas light'
         },
     ])
 
