@@ -13,6 +13,7 @@ import image11 from '../assets/working-img/IMG_6583.png';
 import image12 from '../assets/working-img/IMG_6609.jpeg';
 import image13 from '../assets/working-img/IMG_6614.jpeg';
 import image14 from '../assets/working-img/IMG_6617.jpeg';
+import image15 from '../assets/working-img/IMG_6659.jpeg';
 
 
 
@@ -32,6 +33,7 @@ const useImages = () => {
         { src: image12, alt: 'Image 12' },
         { src: image13, alt: 'Image 13' },
         { src: image14, alt: 'Image 14' },
+        { src: image15, alt: 'Image 15' },
 
         // { src: image6, alt: 'Image 6' },/
     ])
