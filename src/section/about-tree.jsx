@@ -1,6 +1,6 @@
 import { RoughNotation } from "react-rough-notation";
 import { motion } from "motion/react";
-import ITree from '../assets/working-img/IMG_6586.png';
+// import ITree from '../assets/working-img/IMG_6586.png';
 
 
 
@@ -31,7 +31,7 @@ const AboutTree = () => {
                 className="mt-[100px] mb-12 flex items-center justify-center overflow-visible"
             >
                 <div className="relative">
-                    <img src={ITree} className="rounded -rotate-3" width={300}/>
+                    <img src='IMG_6678.jpeg' className="rounded -rotate-3" width={300}/>
                     <img src="tape.png" className="rounded -rotate-[130deg] absolute -top-7 -left-9" width={100}/>
                     <img src="tape.png" className="rounded -rotate-[130deg] absolute -bottom-7 -right-9" width={100}/>
                 </div>
