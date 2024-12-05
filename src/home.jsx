@@ -24,7 +24,7 @@ const Home = () => {
         const preLoader = () => {
             setTimeout(() => {
                 setIsLoading(false);
-            }, 1000)
+            }, 3000)
         }
 
         preLoader();
@@ -39,7 +39,14 @@ const Home = () => {
 
             {isLoading && (
                 <section className="h-svh flex items-center justify-center">
-                    <img src="pre-loader.gif" alt="gif" />
+                    <div class="wrapper">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="shadow"></div>
+                        <div class="shadow"></div>
+                        <div class="shadow"></div>
+                    </div>
                 </section>
             )}
 
